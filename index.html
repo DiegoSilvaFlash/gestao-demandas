@@ -336,7 +336,7 @@ body.dark .msPanel,body.dark .filters .ms .msSearch{background:#1E293B!important
 body.dark .msList label{color:#F1F5F9}
 body.dark .msList label:hover{background:#263449}
 /* ===== kanban com uma coluna por status ===== */
-.kanban{grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);overflow-x:auto;padding-bottom:8px}
+.kanban{grid-template-columns:none!important;grid-template-rows:100%;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);overflow-x:auto;overflow-y:hidden;padding-bottom:8px;height:calc(100vh - 380px);min-height:340px;scrollbar-width:auto}.kanban .kcol{min-height:0!important;overflow-y:auto;display:flex;flex-direction:column}.kanban .kcol h3{position:sticky;top:-10px;z-index:2;background:inherit;padding:8px 0;margin-top:-2px}.kanban::-webkit-scrollbar{height:14px}.kanban::-webkit-scrollbar-thumb{background:#9aa9bd;border-radius:8px}.kanban::-webkit-scrollbar-track{background:#e6ecf4;border-radius:8px}.kcol::-webkit-scrollbar{width:8px}.kcol::-webkit-scrollbar-thumb{background:#c3cedc;border-radius:8px}
 /* ===== próximas e atrasadas ===== */
 .duePanel{grid-column:1/-1;order:-1}
 .dueSummary{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
